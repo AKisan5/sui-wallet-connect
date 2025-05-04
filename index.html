@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUI ウォレットコネクト デモ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    #root {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .demo-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .demo-section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #333;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>SUI ウォレットコネクト デモ</h1>
+  
+  <div class="demo-container">
+    <div class="demo-section">
+      <h2>方法1: React コンポーネントとして使用</h2>
+      <div id="react-component-demo"></div>
+    </div>
+    
+    <div class="demo-section">
+      <h2>方法2: DOM要素に描画</h2>
+      <div id="wallet-connect-container"></div>
+    </div>
+  </div>
+  
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
